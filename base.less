@@ -451,3 +451,11 @@ p {
 .wiki-light {
   background-color: @wiki-light;
 }
+
+@supports (text-decoration: underline dotted) {
+  abbr[title],
+  .explain[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+  }
+}
