@@ -1,0 +1,453 @@
+// Core variables and mixins
+@import "variables.less";
+@import "bootstrap/less/mixins.less";
+
+// Reset and dependencies
+@import "bootstrap/less/normalize.less";
+@import "bootstrap/less/print.less";
+//@import "bootstrap/less/glyphicons.less";
+
+// Core CSS
+@import "bootstrap/less/scaffolding.less";
+@import "bootstrap/less/type.less";
+@import "bootstrap/less/code.less";
+@import "bootstrap/less/grid.less";
+@media (min-width: @screen-md-min) {
+  .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 990px;
+  }
+}
+@media (min-width: @screen-lg-min) {
+  .container-fluid {
+    margin-left: 310px;
+    max-width: 990px;
+  }
+}
+@media (min-width: @screen-xl-min) {
+  .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 990px;
+  }
+}
+
+@import "components/tables.less";
+
+.table-responsive > table {
+  white-space: nowrap;
+}
+.table-responsive {
+  @media screen and (max-width: @screen-xs-max) {
+    margin-bottom: 0;
+  }
+}
+
+@import "bootstrap/less/forms.less";
+@import "bootstrap/less/buttons.less";
+
+// Components
+@import "bootstrap/less/component-animations.less";
+@import "bootstrap/less/dropdowns.less";
+/* Add a pointer cursor for share menu points which don't have an href but onclick js-event */
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    cursor: Pointer;
+  }
+}
+
+@import "bootstrap/less/button-groups.less";
+@import "bootstrap/less/input-groups.less";
+@import "bootstrap/less/navs.less";
+
+.nav-tabs {
+  border-bottom: 2px solid @wiki-primary-border;
+}
+
+.nav-tabs > li {
+  background-color: @wiki-light;
+  margin-right: 2px;
+  margin-bottom: -2px;
+  border-left: 2px solid @wiki-primary-border;
+  border-top: 2px solid @wiki-primary-border;
+  border-right: 2px solid @wiki-primary-border;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: @text-color;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+
+.nav-tabs > li > a {
+  color: @wiki-dark;
+  margin-right: 0;
+}
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover{
+  background-color: @wiki-primary-hover-bg;
+  color: @wiki-dark;
+}
+
+.nav-tabs > li > strong {
+  background-color: #fff;
+  color: @text-color;
+}
+
+.nav-tabs > li > strong {
+  border: 1px solid transparent;
+  border-radius: 0;
+  line-height: 1.42857;
+  margin-right: 0;
+}
+.nav > li > strong {
+  display: block;
+  padding: 5px 10px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .nav-tabs > li {
+    float:none;
+    border:1px solid @wiki-primary-border;
+  }
+  .nav-tabs > li.active > a{
+    border:none;
+  }
+  .nav > li > a:hover, .nav > li > a:focus,
+  .nav > li > a:hover, .nav > li > a:focus,
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+  {
+    background:none;
+    border:none;
+  }
+}
+
+@import "bootstrap/less/navbar.less";
+
+.navbar-main-column {
+  padding: 0;
+}
+#wiki-nav-main-column {
+  padding: 0;
+}
+
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  font-size: 14px;
+}
+
+/* Bigger icons for tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-inverse {
+    font-size: 1.5em;
+  }
+}
+
+/* Smaller second navbar */
+.navbar-inverse {
+  min-height: 36px;
+}
+@media (min-width: 992px) {
+  .navbar-nav-2 > li > a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-inverse {
+    min-height: 38px;
+  }
+  .navbar-nav-2 > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .navbar-nav > li.icon-tablet > a {
+    padding: 11px 10px;
+    font-size: 2em;
+  }
+}
+
+.navbar-nav > li {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav-2 .open .dropdown-menu > li > a,
+  .navbar-nav-2 .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+}
+
+/* Red link (in particular for not existing talk pages */
+.navbar-nav > li.new > a {
+  color: #A05555;
+}
+
+.navbar-form {
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-form {
+    border-bottom: none;
+    border-top: none;
+    padding: 0;
+    box-shadow: none;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 0;
+  }
+}
+
+/* Adjustments for liquipedia brand dropdown */
+.navbar-nav > li.dropdown-brand > a {
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+.brand-title {
+  padding-top: 13px;
+  padding-bottom: 15px;
+  height: 50px;
+}
+.brand-subtitle {
+  position: absolute;
+  margin-top: -5px;
+  right: 24px;
+  font-size: 10px;
+}
+
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+  margin-left: 0px;
+}
+
+@import "bootstrap/less/breadcrumbs.less";
+@import "bootstrap/less/pagination.less";
+@import "bootstrap/less/pager.less";
+@import "bootstrap/less/labels.less";
+.label-light {
+  background-color: @gray-lighter;
+  color: @text-color;
+}
+@import "bootstrap/less/badges.less";
+@import "bootstrap/less/jumbotron.less";
+@import "bootstrap/less/thumbnails.less";
+
+@import "bootstrap/less/alerts.less";
+.alert {
+  margin-bottom: 5px;
+}
+
+@import "bootstrap/less/progress-bars.less";
+@import "bootstrap/less/media.less";
+@import "bootstrap/less/list-group.less";
+
+@import "bootstrap/less/panels.less";
+.panel {
+  margin-bottom: 10px;
+}
+
+@import "bootstrap/less/responsive-embed.less";
+@import "bootstrap/less/wells.less";
+@import "bootstrap/less/close.less";
+
+
+// Components w/ JavaScript
+@import "bootstrap/less/modals.less";
+@import "bootstrap/less/tooltip.less";
+@import "bootstrap/less/popovers.less";
+@import "bootstrap/less/carousel.less";
+
+// Utility classes
+@import "bootstrap/less/utilities.less";
+@import "bootstrap/less/responsive-utilities.less";
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+}
+.multi-column-dropdown {
+  padding-left: 0px;
+}
+.dropdown-menu {
+  min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+  min-width: 500px;
+}
+.dropdown-menu.columns-3 {
+   margin-left: -250px;
+   min-width: 700px;
+ }
+
+@media (max-width: 991px) {
+  .dropdown-menu.columns-3 {
+    margin-left: -220px;
+    min-width: 700px;
+  }
+}
+.multi-column-dropdown li a {
+  padding: 5px 10px;
+}
+.multi-column-dropdown {
+  list-style: none;
+}
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: @dropdown-link-color;
+  white-space: normal;
+}
+
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: @dropdown-link-hover-color;
+  background-color: @dropdown-link-hover-bg;
+}
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 3000px !important;
+    overflow-x: hidden;
+  }
+}
+.multi-column-dropdown .dropdown-header {
+  padding: 3px 0px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
+/* Push body down because of fixed navbar */
+@body-padding : 50px;
+body {
+  padding-top: @body-padding;
+  height: ~"calc(100% - @{body-padding})";
+}
+
+html {
+  height: 100%;
+}
+
+/* Correct offset to top for anchors */
+.mw-headline {
+  padding-top: 60px;
+  margin-top: -60px;
+  display: inline-block; /* required for webkit browsers */
+}
+
+@import "components/headers.less";
+@import "components/toc.less";
+@import "components/footer.less";
+@import "components/mediawiki.less";
+
+/* Flush footer to the bottom even if page is not long enough */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -300px;
+  /* Pad bottom by footer height */
+  padding: 0 0 300px;
+}
+
+.logotype, ul.nav.navbar-nav:first-child > li.dropdown:first-child > a > span:first-child {
+  font-family:'Roboto';
+  font-weight:500;
+}
+
+pre {
+  white-space:pre-wrap;
+}
+
+.collapsible-block {
+  width: 100%;
+  display: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/** Internet Explorer 10 in Windows 8 and Windows Phone 8 fix */
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/* Align the search form with the second navbar on desktop. */
+@media (min-width: 992px) {
+  .navbar-search-right-logged-in {
+    margin-right: -5px !important;
+  }
+}
+
+#main-content-column {
+  background: #fff;
+}
+
+
+@import "components/lp-icons.less";
+@import "components/mobile-navbar.less";
+
+.wiki-dark {
+  background-color: @wiki-dark;
+}
+
+.wiki-light {
+  background-color: @wiki-light;
+}
