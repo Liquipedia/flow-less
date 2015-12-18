@@ -461,16 +461,36 @@ p {
 }
 
 html .thumbcaption {
-	 border: none;
-	 line-height: 1.4em;
-	 padding: 3px;
-	 font-size: 94%;
-	 background-color: #f5f5f5 ;
-	 margin-top: 5px;
+  border: none;
+  line-height: 1.4em;
+  padding: 3px;
+  font-size: 94%;
+  background-color: #f5f5f5 ;
+  margin-top: 5px;
 }
 div.thumbinner {
-	 border-top: 2px solid @wiki-light ;
-	 border-bottom: 2px solid @wiki-light ;
-	 padding: 10px 0;
-	 margin: 0;
+  border-top: 2px solid @wiki-primary-border;
+  border-bottom: 2px solid @wiki-primary-border;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* hide "Edit local description" button for remote wiki files */
+#ca-view-foreign + .divider-vertical, 
+#ca-view-foreign ~ #ca-edit {
+  display:none;
+}
+
+/* change editlinks */
+.mw-content-ltr .mw-editsection, 
+.mw-content-rtl .mw-content-ltr .mw-editsection {
+  float: right;
+}
+ 
+h1 .mw-editsection {
+  padding-top: 18px;
+}
+ 
+h2 .mw-editsection {
+  padding-top: 15px;
 }
