@@ -492,7 +492,8 @@ h2 .mw-editsection {
 }
 
 /* restrict maximum image size in content */
-.image img {
+.image img,
+#file img {
   max-width: 100%;
   height: auto;
 }
@@ -516,5 +517,9 @@ h2 .mw-editsection {
   }
   #mw-fr-commentbox {
     margin-right: 0;
+  }
+  #mw-fr-ratingselects > label[for="wpaccuracy"],
+  #mw-fr-confirmreview > label[for="mw-fr-commentbox"] {
+    margin-left: 10px;
   }
 }
