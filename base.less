@@ -474,6 +474,8 @@ html .thumbcaption {
 div.thumbinner {
   border-top: 2px solid @wiki-primary-border;
   border-bottom: 2px solid @wiki-primary-border;
+  border-right: 0px;
+  border-left: 0px; 
   padding: 10px 0;
   margin: 0;
 }
@@ -529,4 +531,66 @@ h2 .mw-editsection {
   #mw-fr-confirmreview > label[for="mw-fr-commentbox"] {
     margin-left: 10px;
   }
+}
+
+/* enables additional gallery modes */
+ 
+ul.mw-gallery-packed li.gallerybox div.thumb,
+ul.mw-gallery-packed-overlay li.gallerybox div.thumb,
+ul.mw-gallery-packed-hover li.gallerybox div.thumb {
+  background-color: transparent;
+  border: none;
+}
+ul.mw-gallery-packed li.gallerybox div.thumb img,
+ul.mw-gallery-packed-overlay li.gallerybox div.thumb img,
+ul.mw-gallery-packed-hover li.gallerybox div.thumb img {
+  margin: 0 auto;
+}
+ 
+ul.mw-gallery-packed-hover li.gallerybox,
+ul.mw-gallery-packed-overlay li.gallerybox {
+  position:relative;
+}
+ 
+ul.mw-gallery-packed-hover div.gallerytextwrapper {
+  overflow: hidden;
+  height: 0;
+}
+ 
+ul.mw-gallery-packed-hover li.gallerybox:hover div.gallerytextwrapper,
+ul.mw-gallery-packed-overlay li.gallerybox div.gallerytextwrapper,
+ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapper {
+  position:absolute;
+  opacity:.8;
+  filter:alpha(opacity=80);
+  zoom: 1;
+  background-color:white;
+  padding: 5px 10px;
+  bottom: 0;
+  left: 0; /* Needed for IE */
+  height: auto;
+  font-weight: bold;
+  margin: 2px; /* correspond to style on div.thumb */
+}
+ 
+ul.mw-gallery-packed-hover,
+ul.mw-gallery-packed-overlay,
+ul.mw-gallery-packed {
+  text-align: center;
+}
+ 
+ul.mw-gallery-packed-hover div.gallerytext,
+ul.mw-gallery-packed-overlay div.gallerytext {
+  opacity: 1;
+  position: relative; /* Resets opacity in old IE */
+}
+
+/* So that floating [edit] tags don't get pushed down by "float-right/clear-right" divs (such as thumbnail pictures) */
+#mw-content-text h1,
+#mw-content-text h2,
+#mw-content-text h3,
+#mw-content-text h4,
+#mw-content-text h5,
+#mw-content-text h6 {
+	overflow: hidden;
 }
