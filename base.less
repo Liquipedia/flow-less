@@ -448,12 +448,19 @@ p {
   background-color: @wiki-light;
 }
 
+/* Underlining for abbreviations */
 @supports (text-decoration: underline dotted) {
   abbr[title],
   .explain[title] {
     border-bottom: none;
     text-decoration: underline dotted;
   }
+}
+
+/* Keeping the anchor color and cursor for abbreviations in anchors */
+a > abbr {
+	color: inherit;
+	cursor: inherit;
 }
 
 html .thumbcaption {
