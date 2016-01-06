@@ -440,12 +440,23 @@ p {
 @import "components/lp-icons.less";
 @import "components/mobile-navbar.less";
 
-.wiki-dark {
+.wiki-color-dark {
+  color: @wiki-dark;
+}
+.wiki-color-light {
+  color: @wiki-light;
+}
+.wiki-backgroundcolor-dark {
   background-color: @wiki-dark;
 }
-
-.wiki-light {
+.wiki-backgroundcolor-light {
   background-color: @wiki-light;
+}
+.wiki-bordercolor-dark {
+  border-color: @wiki-dark;
+}
+.wiki-bordercolor-light {
+  border-color: @wiki-light;
 }
 
 /* Underlining for abbreviations */
@@ -592,5 +603,14 @@ ul.mw-gallery-packed-overlay div.gallerytext {
 #mw-content-text h4,
 #mw-content-text h5,
 #mw-content-text h6 {
-	overflow: hidden;
+  overflow: hidden;
+}
+
+/* CSS to display wikitext in good-looking monospace font, in tutorials*/
+div.wikitext-quote {
+  font-family: monospace, "Courier New";
+  font-size: 1.1em;
+  white-space: pre;
+  background: #f0f0f0;
+  overflow: auto;
 }
