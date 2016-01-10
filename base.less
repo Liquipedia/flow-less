@@ -90,8 +90,8 @@
   margin-right: 0;
 }
 
-.nav-tabs > li > *:focus,
-.nav-tabs > li:hover > * {
+.nav-tabs > li > span > span > a:focus,
+.nav-tabs > li:hover > span > span > a {
   background-color: @wiki-primary-hover-bg;
   color: @wiki-dark;
 }
@@ -100,8 +100,23 @@
   background-color: #fff;
   color: @text-color;
 }
+.nav-tabs > li.active {
+  background-color: #fff;
+  color: @text-color;
+}
 
 .nav-tabs > li > strong {
+  border: 1px solid transparent;
+  border-radius: 0;
+  line-height: 1.42857;
+  margin-right: 0;
+}
+.nav-tabs > li > span > span > strong {
+  background-color: #fff;
+  color: @text-color;
+}
+
+.nav-tabs > li > span > span > strong {
   border: 1px solid transparent;
   border-radius: 0;
   line-height: 1.42857;
