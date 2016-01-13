@@ -78,11 +78,16 @@
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: @text-color;
   background: #fff;
   cursor: pointer;
   border: 1px solid transparent;
   font-weight: 700;
+}
+
+.nav-tabs > li.active > a:not(.new),
+.nav-tabs > li.active > a:not(.new):hover,
+.nav-tabs > li.active > a:not(.new):focus {
+  color: @text-color;
 }
 
 .nav-tabs > li > a:not(.new) {
