@@ -641,6 +641,23 @@ div.wikitext-quote {
   overflow: auto;
 }
 
+/* spinning pending changes logo */
+.fa-circle-o-notch:before {
+  animation-duration: 7s;
+  animation-name: rotate;
+  display:inline-block;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotate {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
 /* top ad */
 .main-content > div:first-of-type {
   overflow:hidden;
