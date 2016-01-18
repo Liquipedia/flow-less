@@ -82,6 +82,47 @@
   float: right;
 }
 
+@media(max-width:800px) {
+  #preferences table {
+    table-layout:fixed;
+  }
+  #preferences td {
+    display:block;;
+    padding:0;
+  }
+  td.mw-label {
+    text-align:left;
+  }
+  .prefsection {
+    padding:5px !important;
+    width:calc(100% - 10px) !important;
+    max-width:calc(100% - 10px) !important;
+    white-space:pre-wrap;
+  }
+  .htmlform-tip {
+    padding:5px !important;
+  }
+  .mw-prefs-buttons {
+    padding:5px !important;
+  }
+  .prefsection fieldset {
+    width:100%;
+  }
+  #preferences .mw-label label {
+    word-wrap:normal !important;
+    white-space:pre !important;
+    width:100%;
+    max-width:100%;
+  }
+  #mw-input-wpnickname,
+  .mw-input input[type="text"],
+  .mw-input input[type="number"] {
+    width:100% !important;
+    min-width:0;
+    box-sizing: border-box;
+  }
+}
+
 /* History */
 
 #contentSub br {
