@@ -1,3 +1,10 @@
+.sidebar-toc-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  color: @wiki-dark;
+}
+.sidebar-toc-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  color: @wiki-light;
+}
+
 /** No standard TOC on mobile */
 @media (max-width: 767px) {
   #toc {
@@ -70,12 +77,13 @@
 #sidebar-toc ul li.active:focus > a {
   background-color: darken(@body-bg, 5%);
   border-right: 2px solid @wiki-primary-border;
-  color: @wiki-dark;
+  .sidebar-toc-if (@wiki-dark, @wiki-light);
   font-weight: 700;
   width:100%;
 }
+
 #sidebar-toc ul li > a {
-  color: @wiki-dark;
+  .sidebar-toc-if (@wiki-dark, @wiki-light);
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -89,13 +97,13 @@ a#back-to-top,
 a#back-to-top:visited,
 a#back-to-top:focus,
 a#back-to-top:hover, {
-  color: @wiki-dark;
+  .sidebar-toc-if (@wiki-dark, @wiki-light);
 }
 
 #sidebar-toc ul li > a:hover,
 #sidebar-toc ul li > a:focus {
   background: darken(@body-bg, 5%);
-  color: @wiki-dark;
+  .sidebar-toc-if (@wiki-dark, @wiki-light);
   text-decoration: @link-hover-decoration;
 }
 /** display only 3 levels deep for the sidebar toc */

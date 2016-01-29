@@ -68,7 +68,13 @@
 @headings-font-family:    inherit;
 @headings-font-weight:    500;
 @headings-line-height:    1.4;
-@headings-color:          @wiki-dark;
+.headings-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @headings-color:          @wiki-dark;
+}
+.headings-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @headings-color:          @wiki-light;
+}
+.headings-color-if (@wiki-dark, @wiki-light);
 
 
 //== Iconography
@@ -244,7 +250,7 @@
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         @gray-lighter;
+@dropdown-link-hover-bg:          @gray-lighter;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;
@@ -380,10 +386,22 @@
 
 // Navbar links
 @navbar-default-link-color:                @navbar-default-color;
-@navbar-default-link-hover-color:          @navbar-default-color;
-@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 6.5%);
-@navbar-default-link-active-color:         @navbar-default-color;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+
+.navbar-default-link-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @navbar-default-link-hover-color:          @navbar-default-color;
+  @navbar-default-link-hover-bg:             darken(@navbar-default-bg, 6.5%);
+  @navbar-default-link-active-color:         @navbar-default-color;
+  @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+}
+.navbar-default-link-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @navbar-default-link-hover-color:          @wiki-dark;
+  @navbar-default-link-hover-bg:             @wiki-light;
+  @navbar-default-link-active-color:         @wiki-dark;
+  @navbar-default-link-active-bg:            @wiki-light;
+}
+.navbar-default-link-active-color-if (@wiki-dark, @wiki-light);
+
+
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
