@@ -100,10 +100,16 @@
   background-color: @wiki-primary-hover-bg;
   color: @wiki-dark;
 }
-.nav-tabs > li > a {
+.tabs-static .nav-tabs > li > a {
   margin-right:0;
+  float:left;
 }
-.nav-tabs > li:hover > a {
+.tabs-static .nav-tabs > li > strong {
+  float:left;
+}
+.nav-tabs > li:hover > a,
+.nav-tabs > li:hover > span,
+.nav-tabs > li:hover > span > span {
   background-color: @wiki-primary-hover-bg;
 }
 
