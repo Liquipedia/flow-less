@@ -900,3 +900,20 @@
 //##
 @xs-menu-bg : #444;
 @link-visited-color : #5a3696;
+
+.navbar-button-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @navbar-button-active-color:          @wiki-light;
+}
+.navbar-button-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @navbar-button-active-color:          @wiki-dark;
+}
+.navbar-button-active-color-if (@wiki-dark, @wiki-light);
+
+.mobile-menu-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @mobile-menu-color:          @wiki-light;
+}
+.mobile-menu-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @mobile-menu-color:          @wiki-dark;
+}
+.mobile-menu-color-if (@wiki-dark, @wiki-light);
+

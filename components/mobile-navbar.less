@@ -91,6 +91,10 @@
 #main-nav-toggler > span.fa {
   color: @wiki-light;
 }
+.slide-active > span.fa,
+.navbar-search-toggle.active > span.fa {
+  color: @navbar-button-active-color !important;
+}
 
 /* adjust body when menu is open */
 body.slide-active {
@@ -236,6 +240,11 @@ body.slide-active {
     height: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
+  }
+  #slide-toc a,
+  #slide-toc h2,
+  #slidemenu a {
+    color: @mobile-menu-color !important;
   }
 }
 @media (min-width:768px) {
