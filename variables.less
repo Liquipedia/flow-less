@@ -909,6 +909,16 @@
 }
 .navbar-button-active-color-if (@wiki-dark, @wiki-light);
 
+.wiki-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @wiki-color-light:          @wiki-light;
+  @wiki-color-dark:          @wiki-dark;
+}
+.wiki-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @wiki-color-light:          @wiki-dark;
+  @wiki-color-dark:          @wiki-light;
+}
+.wiki-color-if (@wiki-dark, @wiki-light);
+
 .mobile-menu-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
   @mobile-menu-color:          @wiki-light;
 }
