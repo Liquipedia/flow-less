@@ -77,9 +77,6 @@ ul#footer-social-media li {
   overflow: hidden; // important, fixing bug (?) in FF
 
   &> a {
-    zoom: 0.125;
-    -moz-transform: scale(0.125);
-    -moz-transform-origin: 0 0;
     background-repeat: no-repeat;
     display: block;
   }
@@ -87,48 +84,48 @@ ul#footer-social-media li {
 
 a.social-icon {
   background-image: url('../images/infoboxicon_sprite.png');
-  width: 256px;
-  height: 256px;
+  background-size: auto 64px;
+  width: 32px;
+  height: 32px;
 
   &> span.social-link {
-    line-height: 256px;
-    padding-left: 300px;
-    font-size: 8em;
+    line-height: 32px;
+    padding-left: 36px;
   }
 }
 
 a.facebook-icon {
-  background-position: calc(-9 * 256px - 1px) -257px;
+  background-position: calc(-9 * 32px) -32px;
 }
 a.facebook-icon:hover,
 a.facebook-icon:active {
-  background-position: calc(-9 * 256px - 1px) 0;
+  background-position: calc(-9 * 32px) 0;
 }
 a.twitch-icon {
-  background-position: calc(-20 * 256px - 1px) -257px;
+  background-position: calc(-20 * 32px) -32px;
 }
 a.twitch-icon:hover,
 a.twitch-icon:active  {
-  background-position: calc(-20 * 256px - 1px) 0;
+  background-position: calc(-20 * 32px) 0;
 }
 a.twitter-icon {
-  background-position: calc(-21 * 256px - 1px) -257px;
+  background-position: calc(-21 * 32px) -32px;
 }
 a.twitter-icon:hover,
 a.twitter-icon:active {
-  background-position: calc(-21 * 256px - 1px) 0;
+  background-position: calc(-21 * 32px) 0;
 }
 a.youtube-icon {
-  background-position: calc(-25 * 256px - 1px) -257px;
+  background-position: calc(-25 * 32px) -32px;
 }
 a.youtube-icon:hover,
 a.youtube-icon:active {
-  background-position: calc(-25 * 256px - 1px) 0;
+  background-position: calc(-25 * 32px) 0;
 }
 a.github-icon {
-  background-position: calc(-26 * 256px - 1px) -257px;
+  background-position: calc(-26 * 32px) -32px;
 }
 a.github-icon:hover,
 a.github-icon:active {
-  background-position: calc(-26 * 256px - 1px) 0;
+  background-position: calc(-26 * 32px) 0;
 }
