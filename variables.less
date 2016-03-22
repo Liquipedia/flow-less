@@ -935,4 +935,15 @@
 }
 .btn-primary-color-if (@wiki-dark, @wiki-light);
 
+.tab-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @tab-color:                      @wiki-dark;
+  @tab-background-color:           @wiki-light;
+}
+.tab-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @tab-color:                      @text-color;
+  @tab-background-color:           @wiki-dark;
+}
+.tab-color-if (@wiki-dark, @wiki-light);
+@tab-background-color-hover:       darken(@tab-background-color, 15%);
+
 
