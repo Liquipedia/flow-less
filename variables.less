@@ -154,8 +154,6 @@
 @btn-default-bg:                 #fff;
 @btn-default-border:             #ccc;
 
-@btn-primary-color:              @wiki-dark;
-@btn-primary-bg:                 @wiki-light;
 @btn-primary-border:             @wiki-primary-border;
 
 @btn-success-color:              #fff;
@@ -926,4 +924,15 @@
   @mobile-menu-color:          @wiki-dark;
 }
 .mobile-menu-color-if (@wiki-dark, @wiki-light);
+
+.btn-primary-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+  @btn-primary-color:              @wiki-dark;
+  @btn-primary-bg:                 @wiki-light;
+}
+.btn-primary-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+  @btn-primary-color:              @wiki-light;
+  @btn-primary-bg:                 @wiki-dark;
+}
+.btn-primary-color-if (@wiki-dark, @wiki-light);
+
 
