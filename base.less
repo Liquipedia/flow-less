@@ -509,15 +509,6 @@ p {
   border-color: @wiki-primary-border;
 }
 
-/* Underlining for abbreviations */
-@supports (text-decoration: underline dotted) {
-  abbr[title],
-  .explain[title] {
-    border-bottom: none;
-    text-decoration: underline dotted;
-  }
-}
-
 /* Keeping the anchor color and cursor for abbreviations in anchors */
 a > abbr {
   color: inherit;
@@ -763,4 +754,13 @@ body#top.ns--1.mw-special-Ask #mw-content-text table {
     .editButtons {
         line-height:2em;
     }
+}
+
+/* Underlining for abbreviations */
+@supports (text-decoration: underline dotted) {
+  abbr[title],
+  .explain[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+  }
 }
