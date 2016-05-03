@@ -386,16 +386,16 @@
 @navbar-default-link-color:                @navbar-default-color;
 
 .navbar-default-link-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
-  @navbar-default-link-hover-color:          @navbar-default-color;
-  @navbar-default-link-hover-bg:             darken(@navbar-default-bg, 6.5%);
-  @navbar-default-link-active-color:         @navbar-default-color;
-  @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+	@navbar-default-link-hover-color:          @navbar-default-color;
+	@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 6.5%);
+	@navbar-default-link-active-color:         @navbar-default-color;
+	@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 }
 .navbar-default-link-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
-  @navbar-default-link-hover-color:          @wiki-dark;
-  @navbar-default-link-hover-bg:             @wiki-light;
-  @navbar-default-link-active-color:         @wiki-dark;
-  @navbar-default-link-active-bg:            @wiki-light;
+	@navbar-default-link-hover-color:          @wiki-dark;
+	@navbar-default-link-hover-bg:             @wiki-light;
+	@navbar-default-link-active-color:         @wiki-dark;
+	@navbar-default-link-active-bg:            @wiki-light;
 }
 .navbar-default-link-active-color-if (@wiki-dark, @wiki-light);
 
@@ -900,50 +900,48 @@
 @link-visited-color : #5a3696;
 
 .navbar-button-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
-  @navbar-button-active-color:          @wiki-light;
+	@navbar-button-active-color:          @wiki-light;
 }
 .navbar-button-active-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
-  @navbar-button-active-color:          @wiki-dark;
+	@navbar-button-active-color:          @wiki-dark;
 }
 .navbar-button-active-color-if (@wiki-dark, @wiki-light);
 
 .wiki-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
-  @wiki-color-light:          @wiki-light;
-  @wiki-color-dark:          @wiki-dark;
+	@wiki-color-light:          @wiki-light;
+	@wiki-color-dark:           @wiki-dark;
 }
 .wiki-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
-  @wiki-color-light:          @wiki-dark;
-  @wiki-color-dark:          @wiki-light;
+	@wiki-color-light:          @wiki-dark;
+	@wiki-color-dark:           @wiki-light;
 }
 .wiki-color-if (@wiki-dark, @wiki-light);
 
 .mobile-menu-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
-  @mobile-menu-color:          @wiki-light;
+	@mobile-menu-color:          @wiki-light;
 }
 .mobile-menu-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
-  @mobile-menu-color:          @wiki-dark;
+	@mobile-menu-color:          @wiki-dark;
 }
 .mobile-menu-color-if (@wiki-dark, @wiki-light);
 
 .btn-primary-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
-  @btn-primary-color:              @wiki-dark;
-  @btn-primary-bg:                 @wiki-light;
+	@btn-primary-color:              @wiki-dark;
+	@btn-primary-bg:                 @wiki-light;
 }
 .btn-primary-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
-  @btn-primary-color:              @wiki-light;
-  @btn-primary-bg:                 @wiki-dark;
+	@btn-primary-color:              @wiki-light;
+	@btn-primary-bg:                 @wiki-dark;
 }
 .btn-primary-color-if (@wiki-dark, @wiki-light);
 
 .tab-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
-  @tab-color:                      @wiki-dark;
-  @tab-background-color:           @wiki-light;
+	@tab-color:                      @wiki-dark;
+	@tab-background-color:           @wiki-light;
 }
 .tab-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
-  @tab-color:                      @text-color;
-  @tab-background-color:           @wiki-dark;
+	@tab-color:                      @text-color;
+	@tab-background-color:           @wiki-dark;
 }
 .tab-color-if (@wiki-dark, @wiki-light);
 @tab-background-color-hover:       darken(@tab-background-color, 15%);
-
-

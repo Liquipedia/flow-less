@@ -13,42 +13,42 @@
 @import "bootstrap/less/code.less";
 @import "bootstrap/less/grid.less";
 @media (min-width: @screen-md-min) {
-  .container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 990px;
-  }
+	.container-fluid {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 990px;
+	}
 }
 @media (min-width: @screen-lg-min) {
-  .container-fluid {
-    margin-left: 310px;
-    max-width: 990px;
-  }
+	.container-fluid {
+		margin-left: 310px;
+		max-width: 990px;
+	}
 }
 @media (min-width: @screen-xl-min) {
-  .container-fluid {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 990px;
-  }
+	.container-fluid {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 990px;
+	}
 }
 
 @import "components/tables.less";
 .table {
-  width:auto;
+	width:auto;
 }
 .table-full-width {
-  width:100%;
+	width:100%;
 }
 
 .table-responsive > table {
-  white-space: nowrap;
-  margin-bottom: 0;
+	white-space: nowrap;
+	margin-bottom: 0;
 }
 .table-responsive {
-  @media screen and (max-width: @screen-xs-max) {
-    margin-bottom: 0;
-  }
+	@media screen and (max-width: @screen-xs-max) {
+		margin-bottom: 0;
+	}
 }
 .table > thead > tr > th, 
 .table > tbody > tr > th, 
@@ -56,7 +56,7 @@
 .table > thead > tr > td, 
 .table > tbody > tr > td, 
 .table > tfoot > tr > td {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 @import "bootstrap/less/forms.less";
@@ -67,10 +67,10 @@
 @import "bootstrap/less/dropdowns.less";
 /* Add a pointer cursor for share menu points which don't have an href but onclick js-event */
 .dropdown-menu > li > a {
-  &:hover,
-  &:focus {
-    cursor: Pointer;
-  }
+	&:hover,
+	&:focus {
+		cursor: Pointer;
+	}
 }
 
 @import "bootstrap/less/button-groups.less";
@@ -78,208 +78,208 @@
 @import "bootstrap/less/navs.less";
 
 .nav-tabs {
-  border-bottom: 2px solid @wiki-primary-border;
+	border-bottom: 2px solid @wiki-primary-border;
 }
 
 .nav-tabs > li {
-  background-color: @tab-background-color;
-  margin-right: 2px;
-  margin-bottom: -2px;
-  border-left: 2px solid @wiki-primary-border;
-  border-top: 2px solid @wiki-primary-border;
-  border-right: 2px solid @wiki-primary-border;
+	background-color: @tab-background-color;
+	margin-right: 2px;
+	margin-bottom: -2px;
+	border-left: 2px solid @wiki-primary-border;
+	border-top: 2px solid @wiki-primary-border;
+	border-right: 2px solid @wiki-primary-border;
 }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  background: #fff;
-  cursor: pointer;
-  border: 1px solid transparent;
-  font-weight: 700;
+	background: #fff;
+	cursor: pointer;
+	border: 1px solid transparent;
+	font-weight: 700;
 }
 
 .nav-tabs > li.active > a:not(.new),
 .nav-tabs > li.active > a:not(.new):hover,
 .nav-tabs > li.active > a:not(.new):focus {
-  color: @text-color;
+	color: @text-color;
 }
 
 .nav-tabs > li > a:not(.new) {
-  color: @tab-color;
-  margin-right: 0;
+	color: @tab-color;
+	margin-right: 0;
 }
 
 .nav-tabs > li:hover > span > span > a:not(.new) {
-  background-color: @tab-background-color-hover;
-  color: @tab-color;
+	background-color: @tab-background-color-hover;
+	color: @tab-color;
 }
 .tabs-static .nav-tabs > li > a {
-  margin-right:0;
-  float:left;
+	margin-right:0;
+	float:left;
 }
 .tabs-static .nav-tabs > li > strong {
-  float:left;
+	float:left;
 }
 .nav-tabs > li:hover > a,
 .nav-tabs > li:hover > span,
 .nav-tabs > li:hover > span > span {
-  background-color: @tab-background-color-hover;
-  text-decoration:none !important;
+	background-color: @tab-background-color-hover;
+	text-decoration:none !important;
 }
 
 .nav-tabs > li > strong {
-  background-color: #fff;
-  color: @text-color;
+	background-color: #fff;
+	color: @text-color;
 }
 .nav-tabs > li.active {
-  background-color: #fff;
-  color: @text-color;
+	background-color: #fff;
+	color: @text-color;
 }
 
 .nav-tabs > li > strong {
-  border: 1px solid transparent;
-  border-radius: 0;
-  line-height: 1.42857;
-  margin-right: 0;
+	border: 1px solid transparent;
+	border-radius: 0;
+	line-height: 1.42857;
+	margin-right: 0;
 }
 .nav-tabs > li > span > span > strong {
-  background-color: #fff;
-  color: @text-color;
+	background-color: #fff;
+	color: @text-color;
 }
 
 .nav-tabs > li > span > span > strong {
-  border: 1px solid transparent;
-  border-radius: 0;
-  line-height: 1.42857;
-  margin-right: 0;
+	border: 1px solid transparent;
+	border-radius: 0;
+	line-height: 1.42857;
+	margin-right: 0;
 }
 .nav > li > strong {
-  display: block;
-  padding: 5px 10px;
-  position: relative;
+	display: block;
+	padding: 5px 10px;
+	position: relative;
 }
 
 @media (max-width: 767px) {
-  .nav-tabs > li {
-    float:none;
-    border:1px solid @wiki-primary-border;
-  }
-  .nav-tabs > li.active > a{
-    border:none;
-  }
-  .nav > li > a:hover, .nav > li > a:focus,
-  .nav > li > a:hover, .nav > li > a:focus {
-    background:none;
-    border:none;
-  }
+	.nav-tabs > li {
+		float:none;
+		border:1px solid @wiki-primary-border;
+	}
+	.nav-tabs > li.active > a{
+		border:none;
+	}
+	.nav > li > a:hover, .nav > li > a:focus,
+	.nav > li > a:hover, .nav > li > a:focus {
+		background:none;
+		border:none;
+	}
 }
 
 @import "bootstrap/less/navbar.less";
 
 .navbar-main-column {
-  padding: 0;
+	padding: 0;
 }
 #wiki-nav-main-column {
-  padding: 0;
+	padding: 0;
 }
 
 
 .open > .dropdown-menu {
-  display: block;
+	display: block;
 }
 
 .navbar {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 /* Bigger icons for tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar-inverse {
-    font-size: 1.5em;
-  }
+	.navbar-inverse {
+		font-size: 1.5em;
+	}
 }
 
 /* Smaller second navbar */
 .navbar-inverse {
-  min-height: 36px;
+	min-height: 36px;
 }
 @media (min-width: 992px) {
-  .navbar-nav-2 > li > a {
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
+	.navbar-nav-2 > li > a {
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar-inverse {
-    min-height: 38px;
-  }
-  .navbar-nav-2 > li > a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .navbar-nav > li.icon-tablet > a {
-    padding: 11px 10px;
-    font-size: 2em;
-  }
+	.navbar-inverse {
+		min-height: 38px;
+	}
+	.navbar-nav-2 > li > a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.navbar-nav > li.icon-tablet > a {
+		padding: 11px 10px;
+		font-size: 2em;
+	}
 }
 
 .navbar-nav > li {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 @media (max-width: 767px) {
-  .navbar-nav-2 .open .dropdown-menu > li > a,
-  .navbar-nav-2 .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
-  }
+	.navbar-nav-2 .open .dropdown-menu > li > a,
+	.navbar-nav-2 .open .dropdown-menu .dropdown-header {
+		padding: 5px 15px 5px 25px;
+	}
 }
 
 /* Red link (in particular for not existing talk pages */
 .navbar-nav > li.new > a {
-  color: #A05555;
+	color: #A05555;
 }
 
 .navbar-form {
-  padding-right: 0;
+	padding-right: 0;
 }
 
 @media (max-width: 767px) {
-  .navbar-form {
-    border-bottom: none;
-    border-top: none;
-    padding: 0;
-    box-shadow: none;
-    margin-left: 0;
-  }
+	.navbar-form {
+		border-bottom: none;
+		border-top: none;
+		padding: 0;
+		box-shadow: none;
+		margin-left: 0;
+	}
 }
 
 @media (min-width: 768px) {
-  .navbar-right {
-    margin-right: 0;
-  }
+	.navbar-right {
+		margin-right: 0;
+	}
 }
 
 /* Adjustments for liquipedia brand dropdown */
 .navbar-nav > li.dropdown-brand > a {
-  padding-top: 12px;
-  padding-bottom: 18px;
+	padding-top: 12px;
+	padding-bottom: 18px;
 }
 .brand-title {
-  padding-top: 13px;
-  padding-bottom: 15px;
-  height: 50px;
+	padding-top: 13px;
+	padding-bottom: 15px;
+	height: 50px;
 }
 .brand-subtitle {
-  position: absolute;
-  margin-top: -5px;
-  right: 24px;
-  font-size: 10px;
+	position: absolute;
+	margin-top: -5px;
+	right: 24px;
+	font-size: 10px;
 }
 
 .navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
-  margin-left: 0px;
+	margin-left: 0px;
 }
 
 @import "bootstrap/less/breadcrumbs.less";
@@ -287,8 +287,8 @@
 @import "bootstrap/less/pager.less";
 @import "bootstrap/less/labels.less";
 .label-light {
-  background-color: @gray-lighter;
-  color: @text-color;
+	background-color: @gray-lighter;
+	color: @text-color;
 }
 @import "bootstrap/less/badges.less";
 @import "bootstrap/less/jumbotron.less";
@@ -296,7 +296,7 @@
 
 @import "bootstrap/less/alerts.less";
 .alert {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 @import "bootstrap/less/progress-bars.less";
@@ -305,7 +305,7 @@
 
 @import "bootstrap/less/panels.less";
 .panel {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 @import "bootstrap/less/responsive-embed.less";
@@ -324,118 +324,118 @@
 @import "bootstrap/less/responsive-utilities.less";
 
 .dropdown-submenu {
-  position: relative;
+	position: relative;
 }
 .dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
-  display: block;
+	display: block;
 }
 
 .dropdown-submenu > a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #ccc;
+	margin-top: 5px;
+	margin-right: -10px;
 }
 .dropdown-submenu:hover > a:after {
-  border-left-color: #fff;
+	border-left-color: #fff;
 }
 .dropdown-submenu.pull-left {
-  float: none;
+	float: none;
 }
 .dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
+	left: -100%;
+	margin-left: 10px;
 }
 .multi-column-dropdown {
-  padding-left: 0px;
+	padding-left: 0px;
 }
 .dropdown-menu {
-  min-width: 200px;
+	min-width: 200px;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active:hover > a,
 .dropdown-menu > .active:focus > a {
-    color: @gray-dark;
+		color: @gray-dark;
 }
 .dropdown-menu.columns-2 {
-  min-width: 500px;
+	min-width: 500px;
 }
 .dropdown-menu.columns-3 {
-   margin-left: -250px;
-   min-width: 700px;
+	 margin-left: -250px;
+	 min-width: 700px;
  }
 
 @media (max-width: 991px) {
-  .dropdown-menu.columns-3 {
-    margin-left: -220px;
-    min-width: 700px;
-  }
+	.dropdown-menu.columns-3 {
+		margin-left: -220px;
+		min-width: 700px;
+	}
 }
 .multi-column-dropdown li a {
-  padding: 5px 10px;
+	padding: 5px 10px;
 }
 .multi-column-dropdown {
-  list-style: none;
+	list-style: none;
 }
 .multi-column-dropdown li a {
-  display: block;
-  clear: both;
-  line-height: 1.428571429;
-  color: @dropdown-link-color;
-  white-space: normal;
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: @dropdown-link-color;
+	white-space: normal;
 }
 
 .multi-column-dropdown li a:hover {
-  text-decoration: none;
-  color: @dropdown-link-hover-color;
-  background-color: @dropdown-link-hover-bg;
+	text-decoration: none;
+	color: @dropdown-link-hover-color;
+	background-color: @dropdown-link-hover-bg;
 }
 @media (max-width: 767px) {
-  .dropdown-menu.multi-column {
-    min-width: 3000px !important;
-    overflow-x: hidden;
-  }
+	.dropdown-menu.multi-column {
+		min-width: 3000px !important;
+		overflow-x: hidden;
+	}
 }
 .multi-column-dropdown .dropdown-header {
-  padding: 3px 0px;
+	padding: 3px 0px;
 }
 
 @media (min-width: 768px) {
-  body {
-    padding-top: 50px;
-  }
+	body {
+		padding-top: 50px;
+	}
 }
 
 /* Push body down because of fixed navbar */
 @body-padding : 50px;
 body {
-  padding-top: @body-padding;
-  height: ~"calc(100% - @{body-padding})";
+	padding-top: @body-padding;
+	height: ~"calc(100% - @{body-padding})";
 }
 
 html {
-  height: 100%;
+	height: 100%;
 }
 
 /* Correct offset to top for anchors */
 .mw-headline {
-  padding-top: 60px;
-  margin-top: -60px;
-  display: inline-block; /* required for webkit browsers */
+	padding-top: 60px;
+	margin-top: -60px;
+	display: inline-block; /* required for webkit browsers */
 }
 
 @import "components/headers.less";
@@ -445,27 +445,27 @@ html {
 
 /* Flush footer to the bottom even if page is not long enough */
 #wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -330px;
-  /* Pad bottom by footer height */
-  padding: 0 0 330px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by its height */
+	margin: 0 auto -330px;
+	/* Pad bottom by footer height */
+	padding: 0 0 330px;
 }
 
 .logotype {
-  font-family:'Roboto', sans-serif;
-  font-weight:500;
+	font-family:'Roboto', sans-serif;
+	font-weight:500;
 }
 
 .collapsible-block {
-  width: 100%;
-  display: none;
+	width: 100%;
+	display: none;
 }
 
 p {
-  line-height: 1.7;
+	line-height: 1.7;
 }
 
 /** Internet Explorer 10 in Windows 8 and Windows Phone 8 fix */
@@ -477,14 +477,14 @@ p {
 
 /* Align the search form with the second navbar on desktop. */
 @media (min-width: 992px) {
-  .navbar-search-right-logged-in {
-    margin-right: -5px !important;
-  }
+	.navbar-search-right-logged-in {
+		margin-right: -5px !important;
+	}
 }
 
 #main-content-column {
-  background: #fff;
-  padding-bottom:10px;
+	background: #fff;
+	padding-bottom:10px;
 }
 
 
@@ -492,112 +492,112 @@ p {
 @import "components/mobile-navbar.less";
 
 .wiki-color-dark {
-  color: @wiki-color-dark;
+	color: @wiki-color-dark;
 }
 .wiki-color-light {
-  color: @wiki-color-light;
+	color: @wiki-color-light;
 }
 .wiki-backgroundcolor-dark,
 .wiki-backgroundcolor-dark-hover:hover {
-  background-color: @wiki-color-dark;
+	background-color: @wiki-color-dark;
 }
 .wiki-backgroundcolor-light,
 .wiki-backgroundcolor-light-hover:hover {
-  background-color: @wiki-color-light;
+	background-color: @wiki-color-light;
 }
 .wiki-bordercolor-dark {
-  border-color: @wiki-color-dark;
+	border-color: @wiki-color-dark;
 }
 .wiki-bordercolor-light {
-  border-color: @wiki-primary-border;
+	border-color: @wiki-primary-border;
 }
 
 /* Keeping the anchor color and cursor for abbreviations in anchors */
 a > abbr {
-  color: inherit;
-  cursor: inherit;
+	color: inherit;
+	cursor: inherit;
 }
 
 html .thumbcaption {
-  border: none;
-  line-height: 1.4em;
-  padding: 3px;
-  font-size: 94%;
-  background-color: #f5f5f5 ;
-  margin-top: 5px;
+	border: none;
+	line-height: 1.4em;
+	padding: 3px;
+	font-size: 94%;
+	background-color: #f5f5f5 ;
+	margin-top: 5px;
 }
 div.thumbinner {
-  border-top: 2px solid @wiki-primary-border;
-  border-bottom: 2px solid @wiki-primary-border;
-  border-right: 0px;
-  border-left: 0px; 
-  padding: 10px 0;
-  margin: 0;
+	border-top: 2px solid @wiki-primary-border;
+	border-bottom: 2px solid @wiki-primary-border;
+	border-right: 0px;
+	border-left: 0px; 
+	padding: 10px 0;
+	margin: 0;
 }
 
 /* hide "Edit local description" button for remote wiki files */
 #ca-view-foreign + .divider-vertical, 
 #ca-view-foreign ~ #ca-edit {
-  display:none;
+	display:none;
 }
 
 /* change editlinks */
 .mw-content-ltr .mw-editsection, 
 .mw-content-rtl .mw-content-ltr .mw-editsection {
-  float: right;
+	float: right;
 }
  
 h1 .mw-editsection {
-  padding-top: 18px;
+	padding-top: 18px;
 }
  
 h2 .mw-editsection {
-  padding-top: 15px;
+	padding-top: 15px;
 }
 
 /* restrict maximum image size in content */
 .img-responsive img,
 #file img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 @media(max-width:600px) {
-  .thumb {
-    margin: 0;
-  }
-  .thumb img {
-    width: 100%;
-    height: auto;
-  }
+	.thumb {
+		margin: 0;
+	}
+	.thumb img {
+		width: 100%;
+		height: auto;
+	}
 }
 .thumbimage {
-  border:0;
+	border:0;
 }
 
 /* visited links */
 .main-content :not(.nav.nav-tabs) a:visited:not(.new) {
-  color: @link-visited-color;
+	color: @link-visited-color;
 }
 
 /* review box */
 @media(max-width:900px) {
-  #mw-fr-confirmreview > :not(script),
-  #mw-fr-ratingselects > :not(script) {
-    display: block;
-    width: 100%;
-  }
-  #mw-fr-confirmreview > label,
-  #mw-fr-ratingselects > label {
-    display: inline-block;
-    width: auto;
-  }
-  #mw-fr-commentbox {
-    margin-right: 0;
-  }
-  #mw-fr-ratingselects > label[for="wpaccuracy"],
-  #mw-fr-confirmreview > label[for="mw-fr-commentbox"] {
-    margin-left: 10px;
-  }
+	#mw-fr-confirmreview > :not(script),
+	#mw-fr-ratingselects > :not(script) {
+		display: block;
+		width: 100%;
+	}
+	#mw-fr-confirmreview > label,
+	#mw-fr-ratingselects > label {
+		display: inline-block;
+		width: auto;
+	}
+	#mw-fr-commentbox {
+		margin-right: 0;
+	}
+	#mw-fr-ratingselects > label[for="wpaccuracy"],
+	#mw-fr-confirmreview > label[for="mw-fr-commentbox"] {
+		margin-left: 10px;
+	}
 }
 
 /* enables additional gallery modes */
@@ -605,55 +605,57 @@ h2 .mw-editsection {
 ul.mw-gallery-packed li.gallerybox div.thumb,
 ul.mw-gallery-packed-overlay li.gallerybox div.thumb,
 ul.mw-gallery-packed-hover li.gallerybox div.thumb {
-  background-color: transparent;
-  border: none;
+	background-color: transparent;
+	border: none;
 }
 ul.mw-gallery-packed li.gallerybox div.thumb img,
 ul.mw-gallery-packed-overlay li.gallerybox div.thumb img,
 ul.mw-gallery-packed-hover li.gallerybox div.thumb img {
-  margin: 0 auto;
+	margin: 0 auto;
 }
  
 ul.mw-gallery-packed-hover li.gallerybox,
 ul.mw-gallery-packed-overlay li.gallerybox {
-  position:relative;
+	position:relative;
 }
  
 ul.mw-gallery-packed-hover div.gallerytextwrapper {
-  overflow: hidden;
-  height: 0;
+	overflow: hidden;
+	height: 0;
 }
  
 ul.mw-gallery-packed-hover li.gallerybox:hover div.gallerytextwrapper,
 ul.mw-gallery-packed-overlay li.gallerybox div.gallerytextwrapper,
 ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapper {
-  position:absolute;
-  opacity:.8;
-  filter:alpha(opacity=80);
-  zoom: 1;
-  background-color:white;
-  padding: 5px 10px;
-  bottom: 0;
-  left: 0; /* Needed for IE */
-  height: auto;
-  font-weight: bold;
-  margin: 2px; /* correspond to style on div.thumb */
-  width:100% !important;
+	position:absolute;
+	opacity:.8;
+	filter:alpha(opacity=80);
+	zoom: 1;
+	background-color:white;
+	padding: 5px 10px;
+	bottom: 0;
+	left: 0; /* Needed for IE */
+	height: auto;
+	font-weight: bold;
+	margin: 2px; /* correspond to style on div.thumb */
+	width:100% !important;
 }
  
 ul.mw-gallery-packed-hover,
 ul.mw-gallery-packed-overlay,
 ul.mw-gallery-packed {
-  text-align: center;
+	text-align: center;
 }
  
 ul.mw-gallery-packed-hover div.gallerytext,
 ul.mw-gallery-packed-overlay div.gallerytext {
-  opacity: 1;
-  position: relative; /* Resets opacity in old IE */
+	opacity: 1;
+	position: relative; /* Resets opacity in old IE */
 }
 
-li.gallerybox {max-width:100%;}
+li.gallerybox {
+	max-width:100%;
+}
 
 /* So that floating [edit] tags don't get pushed down by "float-right/clear-right" divs (such as thumbnail pictures) */
 #mw-content-text h1,
@@ -662,103 +664,103 @@ li.gallerybox {max-width:100%;}
 #mw-content-text h4,
 #mw-content-text h5,
 #mw-content-text h6 {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 /* CSS to display wikitext in good-looking monospace font, in tutorials*/
 div.wikitext-quote {
-  font-family: monospace, "Courier New";
-  font-size: 1.1em;
-  white-space: pre;
-  background: #f0f0f0;
-  overflow: auto;
+	font-family: monospace, "Courier New";
+	font-size: 1.1em;
+	white-space: pre;
+	background: #f0f0f0;
+	overflow: auto;
 }
 
 /* spinning pending changes logo */
 .fa-circle-o-notch:before {
-  animation-duration: 7s;
-  animation-name: rotate;
-  display:inline-block;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+	animation-duration: 7s;
+	animation-name: rotate;
+	display:inline-block;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 @keyframes rotate {
-  0% {
-    transform:rotate(0deg);
-  }
-  100% {
-    transform:rotate(360deg);
-  }
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
 }
 
 /* top ad */
 .top-ad {
-  overflow:hidden;
-  height:100px;
-  width: 100%;
-  padding-top:10px;
+	overflow:hidden;
+	height:100px;
+	width: 100%;
+	padding-top:10px;
 }
 
 /* search bar */
 @media(min-width:992px) {
-    #searchInput {
-        width:280px;
-    }
+	#searchInput {
+		width:280px;
+	}
 }
 
 .flaggedrevs_reviewform {
-    background-color:transparent !important;
+	background-color:transparent !important;
 }
 
 #filetoc,
 #catlinks,
 .mw-search-profile-tabs {
-    border:1px solid #dddddd !important;
-    background-color:transparent !important;
+	border:1px solid #dddddd !important;
+	background-color:transparent !important;
 }
 
 /* quotes should not overflow infoboxes or other floating stuff */
 blockquote.quote {
-    overflow:hidden;
+	overflow:hidden;
 }
 
 .mw-special-Version #mw-content-text > h2 {
-    width:100%;
+	width:100%;
 }
 
 .tright .thumbinner {
-    min-width:100px;
+	min-width:100px;
 }
 
 /* wikitables shouold break words in order to not overflow in the Special: namespace */
 body#top.ns--1.mw-special-Ask #mw-content-text table {
-    word-break:break-all;
+	word-break:break-all;
 }
 
 .portal-pills a {
-    display:block;
+	display:block;
 }
 
 /* spacing for editing buttons */
 .editButtons > * {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 @media(max-width:767px) {
-    .editButtons {
-        line-height:2em;
-    }
+	.editButtons {
+		line-height:2em;
+	}
 }
 
 /* fix preview tab of editor */
 .wikiEditor-ui * {
-    box-sizing:inherit;
+	box-sizing:inherit;
 }
 
 /* Underlining for abbreviations */
 @supports (text-decoration: underline dotted) {
-  abbr[title],
-  .explain[title] {
-    border-bottom: none;
-    text-decoration: underline dotted;
-  }
+	abbr[title],
+	.explain[title] {
+		border-bottom: none;
+		text-decoration: underline dotted;
+	}
 }
