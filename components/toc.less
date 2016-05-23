@@ -49,7 +49,7 @@
 		bottom: 300px;
 	}
 }
-#sidebar-toc > #toctitle > h2 {
+#sidebar-toc > #toctitle-sidebar > h2 {
 //  font-size: 150%;
 	margin-top: 5px;
 	margin-bottom: 7px;
@@ -142,7 +142,11 @@ a#back-to-top:hover, {
 
 // Within heading, strip any `h*` tag of its default margins for spacing.
 #toc #toctitle, .toc #toctitle,
-#toc .toctitle, .toc .toctitle {
+#toc .toctitle, .toc .toctitle,
+#toc #toctitle-mobile, .toc #toctitle-mobile,
+#toc .toctitle-mobile, .toc .toctitle-mobile,
+#toc #toctitle-sidebar, .toc #toctitle-sidebar,
+#toc .toctitle-sidebar, .toc .toctitle-sidebar {
 	padding: @panel-heading-padding;
 	border-bottom: 1px solid @panel-inner-border;
 	.border-top-radius((@panel-border-radius - 1));
