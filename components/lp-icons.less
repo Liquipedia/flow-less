@@ -1,421 +1,431 @@
-@lp-icon-size: 32px;
+@lp-icon-row-number: 4;
 
 .lp-icon {
 	background: url('../images/infoboxicon_sprite.png') no-repeat 0 0;
 	display: inline-block;
-	width: @lp-icon-size;
-	height: @lp-icon-size;
 	overflow: hidden;
-	background-size: auto 128px; /* also change in footer.less at a.social-icon, 4 * @lp-icon-size */
 	vertical-align: middle;
-
-	/* row 1, first icon (index 0) is error to prevent typos */
-	&.lp-aligulac {
-		background-position: (-1 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-aligulac:hover {
-		background-position: (-1 * @lp-icon-size) 0;
-	}
-
-	&.lp-ask-fm {
-		background-position: (-2 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-ask-fm:hover {
-		background-position: (-2 * @lp-icon-size) 0;
-	}
-
-	&.lp-azubu {
-		background-position: (-3 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-azubu:hover {
-		background-position: (-3 * @lp-icon-size) 0;
-	}
-
-	&.lp-binary-beast {
-		background-position: (-4 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-binary-beast:hover {
-		background-position: (-4 * @lp-icon-size) 0;
-	}
-
-	&.lp-challonge {
-		background-position: (-5 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-challonge:hover {
-		background-position: (-5 * @lp-icon-size) 0;
-	}
-
-	&.lp-datdota {
-		background-position: (-6 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-datdota:hover {
-		background-position: (-6 * @lp-icon-size) 0;
-	}
-
-	&.lp-dotabuff {
-		background-position: (-7 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-dotabuff:hover {
-		background-position: (-7 * @lp-icon-size) 0;
-	}
-
-	&.lp-email {
-		background-position: (-8 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-email:hover {
-		background-position: (-8 * @lp-icon-size) 0;
-	}
-
-	&.lp-facebook {
-		 background-position: (-9 * @lp-icon-size) -@lp-icon-size;
-	 }
-
-	&.lp-facebook:hover {
-		background-position: (-9 * @lp-icon-size) 0;
-	}
-
-	&.lp-faceit {
-		background-position: (-10 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-faceit:hover {
-		background-position: (-10 * @lp-icon-size) 0;
-	}
-
-	&.lp-google-plus {
-		background-position: (-11 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-google-plus:hover {
-		background-position: (-11 * @lp-icon-size) 0;
-	}
-
-	&.lp-reddit {
-		 background-position: (-12 * @lp-icon-size) -@lp-icon-size;
-	 }
-
-	&.lp-reddit:hover {
-		background-position: (-12 * @lp-icon-size) 0;
-	}
-
-	&.lp-skype {
-		background-position: (-13 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-skype:hover {
-		background-position: (-13 * @lp-icon-size) 0;
-	}
-
-	&.lp-smashboards {
-		background-position: (-14 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-smashboards:hover {
-		background-position: (-14 * @lp-icon-size) 0;
-	}
-
-	&.lp-smash-gg {
-		background-position: (-15 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-smash-gg:hover {
-		background-position: (-15 * @lp-icon-size) 0;
-	}
-
-	&.lp-steam {
-		background-position: (-16 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-steam:hover {
-		background-position: (-16 * @lp-icon-size) 0;
-	}
-
-	&.lp-tencent {
-		background-position: (-17 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-tencent:hover {
-		background-position: (-17 * @lp-icon-size) 0;
-	}
-
-	&.lp-toornament {
-		background-position: (-18 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-toornament:hover {
-		background-position: (-18 * @lp-icon-size) 0;
-	}
-
-	&.lp-tournament {
-		background-position: (-19 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-tournament:hover {
-		background-position: (-19 * @lp-icon-size) 0;
-	}
-
-	&.lp-twitch {
-		background-position: (-20 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-twitch:hover {
-		background-position: (-20 * @lp-icon-size) 0;
-	}
-
-	&.lp-twitter {
-		background-position: (-21 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-twitter:hover {
-		background-position: (-21 * @lp-icon-size) 0;
-	}
-
-	&.lp-vkontakte {
-		background-position: (-22 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-vkontakte:hover {
-		background-position: (-22 * @lp-icon-size) 0;
-	}
-
-	&.lp-home {
-		background-position: (-23 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-home:hover {
-		background-position: (-23 * @lp-icon-size) 0;
-	}
-
-	&.lp-weibo {
-		background-position: (-24 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-weibo:hover {
-		background-position: (-24 * @lp-icon-size) 0;
-	}
-
-	&.lp-youtube {
-		background-position: (-25 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-youtube:hover {
-		background-position: (-25 * @lp-icon-size) 0;
-	}
-
-	&.lp-github {
-		background-position: (-26 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-github:hover {
-		background-position: (-26 * @lp-icon-size) 0;
-	}
-
-	&.lp-instagram {
-		background-position: (-27 * @lp-icon-size) -@lp-icon-size;
-	}
-
-	&.lp-instagram:hover {
-		background-position: (-27 * @lp-icon-size) 0;
-	}
-
-	/* row 2 */
-	&.lp-stream {
-		background-position: 0 (-@lp-icon-size * 3);
-	}
-
-	&.lp-stream:hover {
-		background-position: 0 (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlstream {
-		background-position: (-1 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlstream:hover {
-		background-position: (-1 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-fanclub {
-		background-position: (-2 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-fanclub:hover {
-		background-position: (-2 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlpd-hots {
-		background-position: (-3 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlpd-hots:hover {
-		background-position: (-3 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlpd {
-		background-position: (-4 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlpd:hover {
-		background-position: (-4 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlpd-wol {
-		background-position: (-4 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlpd-wol:hover {
-		background-position: (-4 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlpd-wol-korea {
-		background-position: (-5 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlpd-wol-korea:hover {
-		background-position: (-5 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlpd-sospa {
-		background-position: (-6 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlpd-sospa:hover {
-		background-position: (-6 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-gosugamers {
-		background-position: (-7 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-gosugamers:hover {
-		background-position: (-7 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-bracket {
-		background-position: (-8 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-bracket:hover {
-		background-position: (-8 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-afreeca {
-		background-position: (-9 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-afreeca:hover {
-		background-position: (-9 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-rules {
-		background-position: (-10 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-rules:hover {
-		background-position: (-10 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-iccup {
-		background-position: (-11 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-iccup:hover {
-		background-position: (-11 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-esl {
-		background-position: (-12 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-esl:hover {
-		background-position: (-12 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-esea {
-		background-position: (-13 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-esea:hover {
-		background-position: (-13 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-skgaming {
-		background-position: (-14 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-skgaming:hover {
-		background-position: (-14 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-douyutv {
-		background-position: (-15 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-douyutv:hover {
-		background-position: (-15 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-tlprofile {
-		background-position: (-16 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-tlprofile:hover {
-		background-position: (-16 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-cafe-daum {
-		background-position: (-17 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-cafe-daum:hover {
-		background-position: (-17 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-abios {
-		background-position: (-18 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-abios:hover {
-		background-position: (-18 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-youku {
-		background-position: (-19 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-youku:hover {
-		background-position: (-19 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-hitbox {
-		background-position: (-20 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-hitbox:hover {
-		background-position: (-20 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-music {
-		background-position: (-21 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-music:hover {
-		background-position: (-21 * @lp-icon-size) (-@lp-icon-size * 2);
-	}
-
-	&.lp-pandatv {
-		background-position: (-22 * @lp-icon-size) (-@lp-icon-size * 3);
-	}
-
-	&.lp-pandatv:hover {
-		background-position: (-22 * @lp-icon-size) (-@lp-icon-size * 2);
+}
+.render-icons(@icon-row-number, @icon-size, @icon-class) {
+	.lp-icon@{icon-class} {
+		width: @icon-size;
+		height: @icon-size;
+		background-size: auto (@icon-row-number * @icon-size); /* also change in footer.less at a.social-icon, @icon-row-number * @icon-size */
+
+		/* row 1, first icon (index 0) is error to prevent typos */
+		&.lp-aligulac {
+			background-position: (-1 * @icon-size) -@icon-size;
+		}
+
+		&.lp-aligulac:hover {
+			background-position: (-1 * @icon-size) 0;
+		}
+
+		&.lp-ask-fm {
+			background-position: (-2 * @icon-size) -@icon-size;
+		}
+
+		&.lp-ask-fm:hover {
+			background-position: (-2 * @icon-size) 0;
+		}
+
+		&.lp-azubu {
+			background-position: (-3 * @icon-size) -@icon-size;
+		}
+
+		&.lp-azubu:hover {
+			background-position: (-3 * @icon-size) 0;
+		}
+
+		&.lp-binary-beast {
+			background-position: (-4 * @icon-size) -@icon-size;
+		}
+
+		&.lp-binary-beast:hover {
+			background-position: (-4 * @icon-size) 0;
+		}
+
+		&.lp-challonge {
+			background-position: (-5 * @icon-size) -@icon-size;
+		}
+
+		&.lp-challonge:hover {
+			background-position: (-5 * @icon-size) 0;
+		}
+
+		&.lp-datdota {
+			background-position: (-6 * @icon-size) -@icon-size;
+		}
+
+		&.lp-datdota:hover {
+			background-position: (-6 * @icon-size) 0;
+		}
+
+		&.lp-dotabuff {
+			background-position: (-7 * @icon-size) -@icon-size;
+		}
+
+		&.lp-dotabuff:hover {
+			background-position: (-7 * @icon-size) 0;
+		}
+
+		&.lp-email {
+			background-position: (-8 * @icon-size) -@icon-size;
+		}
+
+		&.lp-email:hover {
+			background-position: (-8 * @icon-size) 0;
+		}
+
+		&.lp-facebook {
+			 background-position: (-9 * @icon-size) -@icon-size;
+		 }
+
+		&.lp-facebook:hover {
+			background-position: (-9 * @icon-size) 0;
+		}
+
+		&.lp-faceit {
+			background-position: (-10 * @icon-size) -@icon-size;
+		}
+
+		&.lp-faceit:hover {
+			background-position: (-10 * @icon-size) 0;
+		}
+
+		&.lp-google-plus {
+			background-position: (-11 * @icon-size) -@icon-size;
+		}
+
+		&.lp-google-plus:hover {
+			background-position: (-11 * @icon-size) 0;
+		}
+
+		&.lp-reddit {
+			 background-position: (-12 * @icon-size) -@icon-size;
+		 }
+
+		&.lp-reddit:hover {
+			background-position: (-12 * @icon-size) 0;
+		}
+
+		&.lp-skype {
+			background-position: (-13 * @icon-size) -@icon-size;
+		}
+
+		&.lp-skype:hover {
+			background-position: (-13 * @icon-size) 0;
+		}
+
+		&.lp-smashboards {
+			background-position: (-14 * @icon-size) -@icon-size;
+		}
+
+		&.lp-smashboards:hover {
+			background-position: (-14 * @icon-size) 0;
+		}
+
+		&.lp-smash-gg {
+			background-position: (-15 * @icon-size) -@icon-size;
+		}
+
+		&.lp-smash-gg:hover {
+			background-position: (-15 * @icon-size) 0;
+		}
+
+		&.lp-steam {
+			background-position: (-16 * @icon-size) -@icon-size;
+		}
+
+		&.lp-steam:hover {
+			background-position: (-16 * @icon-size) 0;
+		}
+
+		&.lp-tencent {
+			background-position: (-17 * @icon-size) -@icon-size;
+		}
+
+		&.lp-tencent:hover {
+			background-position: (-17 * @icon-size) 0;
+		}
+
+		&.lp-toornament {
+			background-position: (-18 * @icon-size) -@icon-size;
+		}
+
+		&.lp-toornament:hover {
+			background-position: (-18 * @icon-size) 0;
+		}
+
+		&.lp-tournament {
+			background-position: (-19 * @icon-size) -@icon-size;
+		}
+
+		&.lp-tournament:hover {
+			background-position: (-19 * @icon-size) 0;
+		}
+
+		&.lp-twitch {
+			background-position: (-20 * @icon-size) -@icon-size;
+		}
+
+		&.lp-twitch:hover {
+			background-position: (-20 * @icon-size) 0;
+		}
+
+		&.lp-twitter {
+			background-position: (-21 * @icon-size) -@icon-size;
+		}
+
+		&.lp-twitter:hover {
+			background-position: (-21 * @icon-size) 0;
+		}
+
+		&.lp-vkontakte {
+			background-position: (-22 * @icon-size) -@icon-size;
+		}
+
+		&.lp-vkontakte:hover {
+			background-position: (-22 * @icon-size) 0;
+		}
+
+		&.lp-home {
+			background-position: (-23 * @icon-size) -@icon-size;
+		}
+
+		&.lp-home:hover {
+			background-position: (-23 * @icon-size) 0;
+		}
+
+		&.lp-weibo {
+			background-position: (-24 * @icon-size) -@icon-size;
+		}
+
+		&.lp-weibo:hover {
+			background-position: (-24 * @icon-size) 0;
+		}
+
+		&.lp-youtube {
+			background-position: (-25 * @icon-size) -@icon-size;
+		}
+
+		&.lp-youtube:hover {
+			background-position: (-25 * @icon-size) 0;
+		}
+
+		&.lp-github {
+			background-position: (-26 * @icon-size) -@icon-size;
+		}
+
+		&.lp-github:hover {
+			background-position: (-26 * @icon-size) 0;
+		}
+
+		&.lp-instagram {
+			background-position: (-27 * @icon-size) -@icon-size;
+		}
+
+		&.lp-instagram:hover {
+			background-position: (-27 * @icon-size) 0;
+		}
+
+		/* row 2 */
+		&.lp-stream {
+			background-position: 0 (-@icon-size * 3);
+		}
+
+		&.lp-stream:hover {
+			background-position: 0 (-@icon-size * 2);
+		}
+
+		&.lp-tlstream {
+			background-position: (-1 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlstream:hover {
+			background-position: (-1 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-fanclub {
+			background-position: (-2 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-fanclub:hover {
+			background-position: (-2 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-tlpd-hots {
+			background-position: (-3 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlpd-hots:hover {
+			background-position: (-3 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-tlpd {
+			background-position: (-4 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlpd:hover {
+			background-position: (-4 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-tlpd-wol {
+			background-position: (-4 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlpd-wol:hover {
+			background-position: (-4 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-tlpd-wol-korea {
+			background-position: (-5 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlpd-wol-korea:hover {
+			background-position: (-5 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-tlpd-sospa {
+			background-position: (-6 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlpd-sospa:hover {
+			background-position: (-6 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-gosugamers {
+			background-position: (-7 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-gosugamers:hover {
+			background-position: (-7 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-bracket {
+			background-position: (-8 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-bracket:hover {
+			background-position: (-8 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-afreeca {
+			background-position: (-9 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-afreeca:hover {
+			background-position: (-9 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-rules {
+			background-position: (-10 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-rules:hover {
+			background-position: (-10 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-iccup {
+			background-position: (-11 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-iccup:hover {
+			background-position: (-11 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-esl {
+			background-position: (-12 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-esl:hover {
+			background-position: (-12 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-esea {
+			background-position: (-13 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-esea:hover {
+			background-position: (-13 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-skgaming {
+			background-position: (-14 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-skgaming:hover {
+			background-position: (-14 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-douyutv {
+			background-position: (-15 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-douyutv:hover {
+			background-position: (-15 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-tlprofile {
+			background-position: (-16 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-tlprofile:hover {
+			background-position: (-16 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-cafe-daum {
+			background-position: (-17 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-cafe-daum:hover {
+			background-position: (-17 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-abios {
+			background-position: (-18 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-abios:hover {
+			background-position: (-18 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-youku {
+			background-position: (-19 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-youku:hover {
+			background-position: (-19 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-hitbox {
+			background-position: (-20 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-hitbox:hover {
+			background-position: (-20 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-music {
+			background-position: (-21 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-music:hover {
+			background-position: (-21 * @icon-size) (-@icon-size * 2);
+		}
+
+		&.lp-pandatv {
+			background-position: (-22 * @icon-size) (-@icon-size * 3);
+		}
+
+		&.lp-pandatv:hover {
+			background-position: (-22 * @icon-size) (-@icon-size * 2);
+		}
 	}
 }
+
+.render-icons(@lp-icon-row-number, 32px, ~'');
+.render-icons(@lp-icon-row-number, 25px, ~'.lp-icon-25');
+.render-icons(@lp-icon-row-number, 50px, ~'.lp-icon-50');
+.render-icons(@lp-icon-row-number, 64px, ~'.lp-icon-64');
+.render-icons(@lp-icon-row-number, 100px, ~'.lp-icon-100');
