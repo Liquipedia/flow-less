@@ -944,4 +944,13 @@
 	@tab-background-color:           @wiki-dark;
 }
 .tab-color-if (@wiki-dark, @wiki-light);
+
+.portal-pill-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) < lightness(@wiki-light)) {
+	@portal-pill-color:                      @wiki-dark;
+}
+.portal-pill-color-if (@wiki-dark, @wiki-light) when (lightness(@wiki-dark) >= lightness(@wiki-light)) {
+	@portal-pill-color:                      @wiki-light;
+}
+.portal-pill-color-if (@wiki-dark, @wiki-light);
+
 @tab-background-color-hover:       darken(@tab-background-color, 15%);
