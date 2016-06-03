@@ -83,10 +83,14 @@ ul#footer-social-media li {
 }
 
 a.social-icon {
-	background-image: url('../images/infoboxicon_sprite.png');
-	background-size: auto 128px;
 	width: 32px;
 	height: 32px;
+	background-size: 32px 64px;
+	background-position: 0 -32px;
+
+	&:hover {
+		background-position: 0 0;
+	}
 
 	&> span.social-link {
 		line-height: 32px;
@@ -95,37 +99,17 @@ a.social-icon {
 }
 
 a.facebook-icon {
-	background-position: (-9 * 32px) -32px;
-}
-a.facebook-icon:hover,
-a.facebook-icon:active {
-	background-position: (-9 * 32px) 0;
+	background-image: url(../images/lp-icons/InfoboxIcon_Facebook.png);
 }
 a.twitch-icon {
-	background-position: (-20 * 32px) -32px;
-}
-a.twitch-icon:hover,
-a.twitch-icon:active  {
-	background-position: (-20 * 32px) 0;
+	background-image: url(../images/lp-icons/InfoboxIcon_Twitch.png);
 }
 a.twitter-icon {
-	background-position: (-21 * 32px) -32px;
-}
-a.twitter-icon:hover,
-a.twitter-icon:active {
-	background-position: (-21 * 32px) 0;
+	background-image: url(../images/lp-icons/InfoboxIcon_Twitter.png);
 }
 a.youtube-icon {
-	background-position: (-25 * 32px) -32px;
-}
-a.youtube-icon:hover,
-a.youtube-icon:active {
-	background-position: (-25 * 32px) 0;
+	background-image: url(../images/lp-icons/InfoboxIcon_YouTube.png);
 }
 a.github-icon {
-	background-position: (-26 * 32px) -32px;
-}
-a.github-icon:hover,
-a.github-icon:active {
-	background-position: (-26 * 32px) 0;
+	background-image: url(../images/lp-icons/InfoboxIcon_GitHub.png);
 }
