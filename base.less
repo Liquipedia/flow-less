@@ -74,6 +74,125 @@
 }
 
 @import "bootstrap/less/button-groups.less";
+
+.render-buttons(@btn-identifier) {
+	/* taken from bootstrap */
+	@{btn-identifier} {
+		.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+		display: inline-block;
+		margin-bottom: 0;
+		font-weight: normal;
+		text-align: center;
+		vertical-align: middle;
+		touch-action: manipulation;
+		cursor: pointer;
+		background-image: none;
+		border: 1px solid transparent;
+		white-space: nowrap;
+		padding: 6px 12px;
+		font-size: 11pt;
+		line-height: 1.42857143;
+		border-radius: 0px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		&:focus,
+		&:active:focus,
+		&.active:focus,
+		&.focus,
+		&:active.focus,
+		&.active.focus {
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+		&:hover,
+		&:focus,
+		&.focus {
+			color: #333;
+			text-decoration: none;
+		}
+		&:active,
+		&.active {
+			outline: 0;
+			background-image: none;
+			-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		}
+		&.disabled,
+		&[disabled] {
+			cursor: not-allowed;
+			opacity: 0.65;
+			filter: alpha(opacity=65);
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
+.render-buttons(~'#mw-fr-submit-accept');
+.render-buttons(~'#mw-fr-submit-unaccept');
+.render-buttons(~'#wpPreview');
+.render-buttons(~'#wpDiff');
+.render-buttons(~'#wpSave');
+
+.render-form-control(@form-control-identifier) {
+	/* taken from bootstrap */
+	@{form-control-identifier} {
+		vertical-align: middle;
+		height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+		padding: @padding-base-vertical @padding-base-horizontal;
+		font-size: @font-size-base;
+		line-height: @line-height-base;
+		color: @input-color;
+		background-color: @input-bg;
+		background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+		border: 1px solid @input-border;
+		border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+		.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+		.transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+
+		// Customize the `:focus` state to imitate native WebKit styles.
+		.form-control-focus();
+
+		// Placeholder
+		.placeholder();
+
+		// Unstyle the caret on `<select>`s in IE10+.
+		&::-ms-expand {
+			border: 0;
+			background-color: transparent;
+		}
+
+		// Disabled and read-only inputs
+		//
+		// HTML5 says that controls under a fieldset > legend:first-child won't be
+		// disabled if the fieldset is disabled. Due to implementation difficulty, we
+		// don't honor that edge case; we style them as disabled anyway.
+		&[disabled],
+		&[readonly],
+		fieldset[disabled] & {
+			background-color: @input-bg-disabled;
+			opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+		}
+
+		&[disabled],
+		fieldset[disabled] & {
+			cursor: @cursor-disabled;
+		}
+
+		// Reset height for `textarea`s
+		textarea& {
+			height: auto;
+		}
+	}
+}
+.render-form-control(~'#mw-fr-commentbox');
+.render-form-control(~'#wpstyle');
+.render-form-control(~'#wpaccuracy');
+.render-form-control(~'#wpdepth');
+.render-form-control(~'#wpSummary');
+
 @import "bootstrap/less/input-groups.less";
 @import "bootstrap/less/navs.less";
 
@@ -605,6 +724,9 @@ h3 .mw-editsection {
 }
 
 /* review box */
+#mw-fr-commentbox {
+	margin-right: 3px !important;
+}
 @media(max-width:900px) {
 	#mw-fr-confirmreview > :not(script),
 	#mw-fr-ratingselects > :not(script) {
@@ -615,9 +737,6 @@ h3 .mw-editsection {
 	#mw-fr-ratingselects > label {
 		display: inline-block;
 		width: auto;
-	}
-	#mw-fr-commentbox {
-		margin-right: 0;
 	}
 	#mw-fr-ratingselects > label[for="wpaccuracy"],
 	#mw-fr-confirmreview > label[for="mw-fr-commentbox"] {
