@@ -10,11 +10,13 @@
 
 #footer {
 	color: @text-color;
-	background: @navbar-inverse-bg;
 	border-top: 1px solid darken(@navbar-inverse-bg, 10%);
 	height: 330px;
 	width: 100%;
 	margin-top: 0;
+}
+#footer > * {
+	background: @navbar-inverse-bg;
 }
 
 @media (max-width: 1310px) {
@@ -112,4 +114,17 @@ a.youtube-icon {
 }
 a.github-icon {
 	background-image: url(../images/lp-icons/InfoboxIcon_GitHub.png);
+}
+@media(max-width:767px) {
+	span.social-link {
+		display:none;
+	}
+	#footer-social-media {
+		display:flex !important;
+		justify-content:space-around;
+	}
+	#footer li {
+		line-height:120%;
+		margin-bottom:5%;
+	}
 }
