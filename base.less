@@ -58,6 +58,14 @@
 .table > tfoot > tr > td {
 	vertical-align: middle;
 }
+@media(max-width:767px) {
+	.table-responsive {
+		border:0;
+	}
+	.table-responsive > .table-bordered {
+		border:1px solid #dddddd;
+	}
+}
 
 @import "bootstrap/less/forms.less";
 @import "bootstrap/less/buttons.less";
