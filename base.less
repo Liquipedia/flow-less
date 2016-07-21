@@ -1003,6 +1003,11 @@ body#top.ns--1.mw-special-Ask #mw-content-text table {
 	word-break:break-all;
 }
 
+/* hide overflow on everything but special pages */
+body:not(.ns-special) #mw-content-text {
+	overflow:hidden;
+}
+
 /* Underlining for abbreviations */
 @supports (text-decoration: underline dotted) {
 	abbr[title],
