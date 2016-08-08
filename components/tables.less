@@ -19,7 +19,8 @@ th {
 
 // Baseline styles
 
-.table {
+.table,
+.wikitable {
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: @line-height-computed;
@@ -86,7 +87,8 @@ th {
 //
 // Add borders all around the table and between all the columns.
 
-.table-bordered {
+.table-bordered,
+.wikitable {
 	border: 1px solid @table-border-color;
 	> thead,
 	> tbody,
@@ -231,5 +233,15 @@ table {
 			}
 
 		}
+	}
+}
+
+.wikitable {
+	background: @table-bg !important;
+	border: 1px solid @table-border-color !important;
+	color: inherit !important;
+	// Caption reset
+	> caption {
+		font-weight: normal !important;
 	}
 }
