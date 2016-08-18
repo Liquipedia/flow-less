@@ -56,7 +56,9 @@
 .table > tfoot > tr > th, 
 .table > thead > tr > td, 
 .table > tbody > tr > td, 
-.table > tfoot > tr > td,
+.table > tfoot > tr > td {
+	vertical-align: middle;
+}
 .wikitable > thead > tr > th, 
 .wikitable > tbody > tr > th, 
 .wikitable > tfoot > tr > th, 
@@ -64,6 +66,7 @@
 .wikitable > tbody > tr > td, 
 .wikitable > tfoot > tr > td {
 	vertical-align: middle;
+	border-color: @table-border-color;
 }
 @media(max-width:767px) {
 	.table-responsive {
