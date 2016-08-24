@@ -148,15 +148,9 @@
 		}
 	}
 }
-.render-buttons(~'#mw-fr-submit-accept');
-.render-buttons(~'#mw-fr-submit-unaccept');
-.render-buttons(~'#mw-fr-submit-reject');
-.render-buttons(~'#wpPreview');
-.render-buttons(~'#wpDiff');
-.render-buttons(~'#wpSave');
+.render-buttons(~'#mw-content-text button');
 .render-buttons(~'#mw-content-text input[type=submit]');
 .render-buttons(~'#mw-content-text input[type=button]');
-.render-buttons(~'#prefcontrol');
 
 .render-form-control(@form-control-identifier) {
 	/* taken from bootstrap */
@@ -218,71 +212,7 @@
 	height:initial;
 }
 .render-form-control(~'#mw-content-text input[type=text]');
-.render-form-control(~'#mw-fr-commentbox');
-.render-form-control(~'#wpstyle');
-.render-form-control(~'#wpaccuracy');
-.render-form-control(~'#wpdepth');
-.render-form-control(~'#wpSummary');
-.render-form-control(~'#wpReason');
-.render-form-control(~'#wpDeleteReasonList');
-.render-form-control(~'#wpComment');
-.render-form-control(~'#wpLevel');
-.render-form-control(~'#wpCategory');
-.render-form-control(~'#wpSize');
-.render-form-control(~'#wpDestFile');
-.render-form-control(~'#wpUploadDescription');
-.render-form-control(~'#wpLicense');
-.render-form-control(~'#wpNewTitleNs');
-.render-form-control(~'#wpNewTitleMain');
-.render-form-control(~'#mwProtect-level-edit');
-.render-form-control(~'#mwProtectExpirySelection-edit');
-.render-form-control(~'#mwProtect-edit-expires');
-.render-form-control(~'#mwProtect-level-move');
-.render-form-control(~'#mwProtectExpirySelection-move');
-.render-form-control(~'#mwProtect-move-expires');
-.render-form-control(~'#wpProtectReasonSelection');
-.render-form-control(~'#mwProtect-reason');
-.render-form-control(~'#mwProtect-level-autoreview');
-.render-form-control(~'#mwStabilizeExpirySelection');
-.render-form-control(~'#mwStabilizeExpiryOther');
-.render-form-control(~'#wpReasonSelection');
-.render-form-control(~'#mw-input-wprealname');
-.render-form-control(~'#mw-input-wplanguage');
-.render-form-control(~'#mw-input-wpnickname');
-.render-form-control(~'#mw-input-wptimecorrection');
-.render-form-control(~'#mw-input-wptimecorrection-other');
-.render-form-control(~'#mw-input-wpimagesize');
-.render-form-control(~'#mw-input-wpthumbsize');
-.render-form-control(~'#mw-input-wpunderline');
-.render-form-control(~'#mw-input-wpstubthreshold');
-.render-form-control(~'#mw-input-wpeditfont');
-.render-form-control(~'#mw-input-wpcols');
-.render-form-control(~'#mw-input-wprows');
-.render-form-control(~'#mw-input-wprcdays');
-.render-form-control(~'#mw-input-wprclimit');
-.render-form-control(~'#mw-input-wpwatchlistdays');
-.render-form-control(~'#mw-input-wpwllimit');
-.render-form-control(~'#mw-input-wpExpiry');
-.render-form-control(~'#mw-input-wpExpiry-other');
-.render-form-control(~'#mw-input-wpReason');
-.render-form-control(~'#mw-input-wpReason-other');
-.render-form-control(~'#username');
-.render-form-control(~'#namespace');
-.render-form-control(~'#category');
-.render-form-control(~'#catname');
-.render-form-control(~'#offset');
-.render-form-control(~'#group');
-.render-form-control(~'#mw-import-comment');
-.render-form-control(~'#mw-interwiki-rootpage-upload');
-.render-form-control(~'#mw-bi-target');
-.render-form-control(~'#mw-log-user');
-.render-form-control(~'#mw-log-page');
-.render-form-control(~'#year');
-.render-form-control(~'#month');
-.render-form-control(~'#page_input_box');
-.render-form-control(~'#mw-whatlinkshere-target');
-.render-form-control(~'td.mw-input input[name=target]');
-.render-form-control(~'input.mw-input[name=target]');
+.render-form-control(~'#mw-content-text input:not([type])');
 
 @import "bootstrap/less/input-groups.less";
 @import "bootstrap/less/navs.less";
