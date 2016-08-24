@@ -4,16 +4,16 @@
 
 
 table {
-	background-color: @table-bg;
+	background-color:@table-bg;
 }
 caption {
-	padding-top: @table-cell-padding;
-	padding-bottom: @table-cell-padding;
-	color: @text-muted;
-	text-align: center;
+	padding-top:@table-cell-padding;
+	padding-bottom:@table-cell-padding;
+	color:@text-muted;
+	text-align:center;
 }
 th {
-	text-align: center;
+	text-align:center;
 }
 
 
@@ -21,9 +21,9 @@ th {
 
 .table,
 .wikitable {
-	width: 100%;
-	max-width: 100%;
-	margin-bottom: @line-height-computed;
+	width:100%;
+	max-width:100%;
+	margin-bottom:@line-height-computed;
 	// Cells
 	> thead,
 	> tbody,
@@ -31,18 +31,18 @@ th {
 		> tr {
 			> th,
 			> td {
-				padding: @table-cell-padding;
-				line-height: @line-height-base;
-				vertical-align: top;
-				border-top: 1px solid @table-border-color;
+				padding:@table-cell-padding;
+				line-height:@line-height-base;
+				vertical-align:top;
+				border-top:1px solid @table-border-color;
 			}
 		}
 	}
 	// Bottom align for column headings
 	> thead > tr > th {
-		background-color: #f5f5f5;
-		vertical-align: bottom;
-		border-bottom: 2px solid @table-border-color;
+		background-color:#f5f5f5;
+		vertical-align:bottom;
+		border-bottom:2px solid @table-border-color;
 	}
 	// Remove top border from thead by default
 	> caption + thead,
@@ -51,18 +51,18 @@ th {
 		> tr:first-child {
 			> th,
 			> td {
-				border-top: 0;
+				border-top:0;
 			}
 		}
 	}
 	// Account for multiple tbody instances
 	> tbody + tbody {
-		border-top: 2px solid @table-border-color;
+		border-top:2px solid @table-border-color;
 	}
 
 	// Nesting
 	.table {
-		background-color: @body-bg;
+		background-color:@body-bg;
 	}
 }
 
@@ -76,7 +76,7 @@ th {
 		> tr {
 			> th,
 			> td {
-				padding: @table-condensed-cell-padding;
+				padding:@table-condensed-cell-padding;
 			}
 		}
 	}
@@ -89,21 +89,21 @@ th {
 
 .table-bordered,
 .wikitable {
-	border: 1px solid @table-border-color;
+	border:1px solid @table-border-color;
 	> thead,
 	> tbody,
 	> tfoot {
 		> tr {
 			> th,
 			> td {
-				border: 1px solid @table-border-color;
+				border:1px solid @table-border-color;
 			}
 		}
 	}
 	> thead > tr {
 		> th,
 		> td {
-			border-bottom-width: 2px;
+			border-bottom-width:2px;
 		}
 	}
 }
@@ -115,7 +115,7 @@ th {
 
 .table-striped {
 	> tbody > tr:nth-child(odd) {
-		background-color: @table-bg-accent;
+		background-color:@table-bg-accent;
 	}
 }
 
@@ -126,7 +126,7 @@ th {
 
 .table-hover {
 	> tbody > tr:hover {
-		background-color: @table-bg-hover;
+		background-color:@table-bg-hover;
 	}
 }
 
@@ -136,17 +136,17 @@ th {
 // Reset default table behavior
 
 table col[class*="col-"] {
-	position: static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
-	float: none;
-	display: table-column;
+	position:static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
+	float:none;
+	display:table-column;
 }
 table {
 	td,
 	th {
 		&[class*="col-"] {
-			position: static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
-			float: none;
-			display: table-cell;
+			position:static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
+			float:none;
+			display:table-cell;
 		}
 	}
 }
@@ -172,19 +172,19 @@ table {
 // will display normally.
 
 .table-responsive {
-	overflow-x: auto;
-	min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+	overflow-x:auto;
+	min-height:0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
 
-	@media screen and (max-width: @screen-xs-max) {
-		width: 100%;
-		margin-bottom: (@line-height-computed * 0.75);
-		overflow-y: hidden;
-		-ms-overflow-style: -ms-autohiding-scrollbar;
-		border: 1px solid @table-border-color;
+	@media screen and (max-width:@screen-xs-max) {
+		width:100%;
+		margin-bottom:(@line-height-computed * 0.75);
+		overflow-y:hidden;
+		-ms-overflow-style:-ms-autohiding-scrollbar;
+		border:1px solid @table-border-color;
 
 		// Tighten up spacing
 		> .table {
-			margin-bottom: 0;
+			margin-bottom:0;
 
 			// Ensure the content doesn't wrap
 			> thead,
@@ -193,7 +193,7 @@ table {
 				> tr {
 					> th,
 					> td {
-						white-space: nowrap;
+						white-space:nowrap;
 					}
 				}
 			}
@@ -201,7 +201,7 @@ table {
 
 		// Special overrides for the bordered tables
 		> .table-bordered {
-			border: 0;
+			border:0;
 
 			// Nuke the appropriate borders so that the parent can handle them
 			> thead,
@@ -210,11 +210,11 @@ table {
 				> tr {
 					> th:first-child,
 					> td:first-child {
-						border-left: 0;
+						border-left:0;
 					}
 					> th:last-child,
 					> td:last-child {
-						border-right: 0;
+						border-right:0;
 					}
 				}
 			}
@@ -227,7 +227,7 @@ table {
 				> tr:last-child {
 					> th,
 					> td {
-						border-bottom: 0;
+						border-bottom:0;
 					}
 				}
 			}
@@ -237,11 +237,11 @@ table {
 }
 
 .wikitable {
-	background: @table-bg !important;
-	border: 1px solid @table-border-color !important;
-	color: inherit !important;
+	background:@table-bg !important;
+	border:1px solid @table-border-color !important;
+	color:inherit !important;
 	// Caption reset
 	> caption {
-		font-weight: normal !important;
+		font-weight:normal !important;
 	}
 }
