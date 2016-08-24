@@ -211,11 +211,37 @@
 #mw-content-text select[size] {
 	height:initial;
 }
+.render-form-control(~'#mw-content-text input[type=date]');
+.render-form-control(~'#mw-content-text input[type=datetime]');
+.render-form-control(~'#mw-content-text input[type=datetime-local]');
+.render-form-control(~'#mw-content-text input[type=email]');
+.render-form-control(~'#mw-content-text input[type=month]');
+.render-form-control(~'#mw-content-text input[type=number]');
+.render-form-control(~'#mw-content-text input[type=password]');
+.render-form-control(~'#mw-content-text input[type=range]');
+.render-form-control(~'#mw-content-text input[type=search]');
+.render-form-control(~'#mw-content-text input[type=tel]');
 .render-form-control(~'#mw-content-text input[type=text]');
+.render-form-control(~'#mw-content-text input[type=time]');
+.render-form-control(~'#mw-content-text input[type=url]');
+.render-form-control(~'#mw-content-text input[type=week]');
 .render-form-control(~'#mw-content-text input:not([type])');
 #mw-content-text textarea,
 #mw-content-text select,
+#mw-content-text input[type=date],
+#mw-content-text input[type=datetime],
+#mw-content-text input[type=datetime-local],
+#mw-content-text input[type=email],
+#mw-content-text input[type=month],
+#mw-content-text input[type=number],
+#mw-content-text input[type=password],
+#mw-content-text input[type=range],
+#mw-content-text input[type=search],
+#mw-content-text input[type=tel],
 #mw-content-text input[type=text],
+#mw-content-text input[type=time],
+#mw-content-text input[type=url],
+#mw-content-text input[type=week],
 #mw-content-text input:not([type]) {
 	max-width:100%;
 }
