@@ -268,13 +268,17 @@ td.mw-label {
 }
 
 .nav-tabs > li > a:not(.new) {
-	color:@tab-color;
+	color:@link-color;
+	margin-right:0;
+}
+.nav-tabs > li > a:not(.new):hover {
+	color:@link-hover-color;
 	margin-right:0;
 }
 
 .nav-tabs > li:hover > span > span > a:not(.new) {
 	background-color:@tab-background-color-hover;
-	color:@tab-color;
+	color:@link-hover-color;
 }
 .tabs-static .nav-tabs > li > a {
 	margin-right:0;
