@@ -37,12 +37,14 @@
 	width:300px;
 
 	&.affix-top {
-		margin-top:8px;
-		position:inherit;
+		position:fixed;
+		top:89px;
+		transition:.5s;
 	}
 	&.affix {
 		position:fixed;
 		top:57px;
+		transition:.5s;
 	}
 	&.affix-bottom {
 		position:fixed;
@@ -59,6 +61,7 @@
 /* less margin for the first ul-level of the sidebar-toc */
 #sidebar-toc > ul {
 	margin-left:0px;
+	transition:.5s;
 }
 #sidebar-toc ul li {
 	list-style:outside none none;
@@ -114,14 +117,16 @@ a#back-to-top:hover, {
 	display:block;
 }
 
-#toc, .toc {
+#toc,
+.toc {
 	margin-bottom:0;
 	padding:0;
 	list-style:none;
 	border:1px solid @panel-inner-border;
 	.box-shadow(0 1px 1px rgba(0,0,0,.05));
 }
-#toc >li, .toc > li {
+#toc > li,
+.toc > li {
 	color:#337ab7;
 	position:relative;
 	display:block;
@@ -141,12 +146,18 @@ a#back-to-top:hover, {
 }
 
 // Within heading, strip any `h*` tag of its default margins for spacing.
-#toc #toctitle, .toc #toctitle,
-#toc .toctitle, .toc .toctitle,
-#toc #toctitle-mobile, .toc #toctitle-mobile,
-#toc .toctitle-mobile, .toc .toctitle-mobile,
-#toc #toctitle-sidebar, .toc #toctitle-sidebar,
-#toc .toctitle-sidebar, .toc .toctitle-sidebar {
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle,
+#toc #toctitle-mobile,
+.toc #toctitle-mobile,
+#toc .toctitle-mobile,
+.toc .toctitle-mobile,
+#toc #toctitle-sidebar,
+.toc #toctitle-sidebar,
+#toc .toctitle-sidebar,
+.toc .toctitle-sidebar {
 	padding:@panel-heading-padding;
 	border-bottom:1px solid @panel-inner-border;
 	.border-top-radius((@panel-border-radius - 1));
@@ -161,7 +172,8 @@ a#back-to-top:hover, {
 	}
 }
 
-#toc ul ul, .toc ul ul {
+#toc ul ul,
+.toc ul ul {
 	padding:2px;
 }
 
